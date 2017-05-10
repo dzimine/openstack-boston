@@ -1,0 +1,13 @@
+
+name: hello
+pack: boston
+runner_type: "local-shell-script"
+description: "Says Hi using shell"
+enabled: true
+entry_point: "hello.sh"
+parameters:
+  name:
+    type: "string"
+    description: "Name or nick to greet you in Boston"
+    position: 1
+
