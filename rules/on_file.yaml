@@ -1,0 +1,14 @@
+---
+name: on_file_hello
+pack: boston
+enabled: true
+trigger:
+    type: linux.file_watch.line
+
+criteria: {}
+
+action:
+  ref: boston.hello
+  parameters:
+    name:  "{{ trigger.line }}"
+
