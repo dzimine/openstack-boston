@@ -4,6 +4,8 @@ pack: boston
 enabled: true
 trigger:
     type: linux.file_watch.line
+    parameters:
+      file_path: /tmp/zoo
 
 criteria: {}
 
